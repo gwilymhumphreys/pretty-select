@@ -1,0 +1,88 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  /* May want a typekit subscription or somesuch to use proxima nova */
+  font-family: proxima-nova, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #60676f; }
+
+.container {
+  max-width: 1160px;
+  background: 509px 324px no-repeat url(../img/Drop-down-Style-v4.png);
+  height: 658px; }
+  .container .row {
+    margin-top: 60px;
+    clear: both; }
+    .container .row .col {
+      padding: 60px 40px;
+      width: 300px;
+      float: left;
+      margin-left: 20px; }
+      .container .row .col.dark {
+        background: #edeff0; }
+
+.select {
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), rgba(189, 194, 199, 0.1));
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.1), rgba(189, 194, 199, 0.1));
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.1), rgba(189, 194, 199, 0.1));
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.1), rgba(189, 194, 199, 0.1));
+  -webkit-transition: 500ms ease;
+  -moz-transition: 500ms ease;
+  -ms-transition: 500ms ease;
+  -o-transition: 500ms ease;
+  transition: 500ms ease;
+  display: inline-block;
+  border-radius: 3px;
+  box-shadow: inset 0 0 2px white, 1px 0 1px rgba(214, 216, 219, 0.27);
+  border: solid 1px #ced1d4;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 11px 20px; }
+  .select:hover {
+    border: solid 1px rgba(0, 0, 0, 0);
+    background-image: none;
+    box-shadow: inset 0 0 2px white, 0 1px 3px rgba(0, 0, 0, 0.15), 0 0 4px rgba(193, 198, 203, 0.55); }
+  .select a {
+    -webkit-transition: 300ms ease;
+    -moz-transition: 300ms ease;
+    -ms-transition: 300ms ease;
+    -o-transition: 300ms ease;
+    transition: 300ms ease;
+    color: #60676f;
+    text-decoration: none; }
+  .select .selected {
+    display: inline-block; }
+  .select.active .selected {
+    color: #000; }
+  .select .arrow-down {
+    width: 9px;
+    height: 10px;
+    display: inline-block;
+    margin-left: 40px;
+    background: transparent url(../img/arrow-down-blue.png) right center no-repeat; }
+  .select ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 0 4px rgba(193, 198, 203, 0.55);
+    border-radius: 3px;
+    border: solid 1px rgba(193, 198, 203, 0.55); }
+    .select ul li {
+      list-style: none;
+      border-top: solid 1px #edf2f7;
+      background: #fff; }
+      .select ul li:first-child {
+        border-top: none; }
+      .select ul li:hover {
+        background: #fbfbfb; }
+        .select ul li:hover a {
+          color: #000; }
+      .select ul li a {
+        display: block;
+        padding: 11px 20px; }
+      .select ul li a:active, .select ul li a.active {
+        color: #148fe6; }

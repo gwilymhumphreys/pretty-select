@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>hello</title>
+  <link rel="stylesheet" href="css/style.css">
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <select>
+          <option>First option</option>
+          <option>Second item</option>
+          <option>Third Something</option>
+          <option>And so forth</option>
+        </select>
+      </div>
+      <div class="col dark">
+        <select>
+          <option>First option</option>
+          <option>Second item</option>
+          <option>Third Something</option>
+          <option>And so forth</option>
+        </select>
+      </div>
+    </div>
+    <div class="row"><img src="img/Drop-down-Style-v4.png"></div>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/prettySelect.js"></script>
+  <script>
+      $('select').prettySelect({
+          xOffset: 5
+      });
+  </script>
+</body>
+</html>
